@@ -6,10 +6,6 @@ const { generateShortUrl, urlValidation } = require("./middlewares");
 const app = express();
 const PORT = 3000;
 
-// app.use((req, res, next) => {
-//   res.setHeader('Content-Type', 'application/json; charset=utf-8'); // Устанавливаем Content-Type с указанием кодировки
-//   next();
-// });
 app.use(express.json());
 app.use(express.static("views"));
 app.use(morgan("dev"));
